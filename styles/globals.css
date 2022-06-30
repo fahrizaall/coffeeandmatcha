@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,27 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.inti {
+  @apply text-cyan-500 font-bold text-base sm:text-xl capitalize
+}
+
+.slim-scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.slim-scroll::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  background: lightgray;
+  border-radius: 10px;
+}
+
+.slim-scroll::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+.slide-active {
+  @apply opacity-100;
 }
