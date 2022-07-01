@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react'
 
-export default function index() {
+export default function Index() {
   const [activeSlide, setActiveSlide] = useState(0)
   const [slideShow, setSlideShow] = useState(null)
   // var slideShow;
