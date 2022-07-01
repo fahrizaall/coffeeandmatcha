@@ -1,10 +1,10 @@
 import Head from 'next/head';
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 export default function Index() {
   const [activeSlide, setActiveSlide] = useState(0)
   const [slideShow, setSlideShow] = useState(null)
-  // var slideShow;
 
   function slides() {
     slideShow.forEach((slide, i) => {
@@ -102,7 +102,7 @@ export default function Index() {
       </section>
 
       <nav className='absolute top-0 right-1/2 py-2'>
-        <a href="/">Home</a>
+        <Link href={'/'}>Home</Link>
       </nav>
 
       <div
